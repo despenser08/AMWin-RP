@@ -14,8 +14,8 @@ namespace AMWin_RichPresence
 {
     internal class AppleMusicWebScraper
     {
-        private static readonly Regex SongTitleRegex = new Regex(@"(?<=Apple Music에서 ).*(?=의)", RegexOptions.Compiled);
-        private static readonly Regex DurationRegex = new Regex(@"(?<=길이: )\S*$", RegexOptions.Compiled);
+        private static readonly Regex SongTitleRegex = new Regex(@"(?<=의 ).*(?= 음악을)", RegexOptions.Compiled);
+        private static readonly Regex DurationRegex = new Regex(@"(?<=길이: )\S*(?=\.)", RegexOptions.Compiled);
         private static readonly Regex ImageUrlRegex = new Regex(@"http\S*?(?= \d{2,3}w)", RegexOptions.Compiled);
         Logger? logger;
         string? lastFmApiKey;
