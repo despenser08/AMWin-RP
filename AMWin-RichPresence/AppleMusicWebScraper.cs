@@ -202,7 +202,7 @@ namespace AMWin_RichPresence
                     searchResultSubtitle = HttpUtility.HtmlDecode(searchResultSubtitle);
 
                     // check that the result actually is the song
-                    if (searchResultTitle.ToLower() == songName.ToLower() && searchResultSubtitle.ToLower() == $"Song · {songArtist}".ToLower())
+                    if (searchResultTitle.ToLower() == songName.ToLower() && searchResultSubtitle.ToLower() == $"노래 · {songArtist}".ToLower())
                     {
                         return result;
                     }
